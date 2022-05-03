@@ -17,9 +17,8 @@ module.exports.getOneUser = async function (req, res, next) {
 module.exports.getOneUserWithOrders = async function (req, res, next) {
     try {
         const id = req.params.id;
-        const users = await userModel.findOne({ _id : ObjectId(id)})
-        //.populate({path : 'orders', select: 'orderSum'});
-        res.send(users);
+        const users = await userModel.findOne({ _id : '6243334bdd417ce9e7626bcc'}).populate({path : 'orders'});
+        res.send(users.orders);
     }
     catch (error) {
         next(error);
@@ -62,7 +61,6 @@ module.exports.postUser = async function (req, res, next) {
         }
         catch (error) {
             next(error);
-             // res.status(400).send(`inserted failed ${error}`);
         }
     }
 }
@@ -76,5 +74,4 @@ module.exports.deleteUser = async function (req, res, next) {
     catch (error) {
         next(error);
     }
-
 };

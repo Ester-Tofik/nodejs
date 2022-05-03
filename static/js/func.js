@@ -36,7 +36,7 @@ function getallorders() {
             }
         })
         .then(data => {
-            document.getElementById('orders').innerHTML = data.firstName;
+            document.getElementById('orders').innerHTML = JSON.stringify(data);
         })
        
 }

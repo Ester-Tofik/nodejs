@@ -35,14 +35,13 @@ const userSchema = new mongoose.Schema({
         type: Date,
         default : new Date()
     }
-}, {timestamps : true});
+}, {timestamps : true,'toJSON': {virtuals: true}  });
 
-
-userSchema.virtual ('orders', {
+userSchema.virtual('orders', {
     ref : 'order',
     localField : '_id',
     foreignField : 'userId'
 });
-userSchema.set('toJSON',{ virtual: true } );
+//userSchema.set('toJSON',{ virtual: true } );
 
 module.exports = mongoose.model('user', userSchema);

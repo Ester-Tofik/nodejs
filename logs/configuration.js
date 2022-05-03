@@ -1,5 +1,8 @@
 const winston = require('winston');
 require('winston-mongodb');
+const dotenv = require('dotenv');
+dotenv.config();
+const connectionString = process.env.CONNECTION_STRING;
 
 const logConfiguration = {
     transports : [
@@ -12,7 +15,7 @@ const logConfiguration = {
         }),
         new winston.transports.MongoDB({
             level:'error',
-            db:'mongodb://srv1:27017/325202349_ST_AYALA',
+            db: connectionString,
             options: {
                 useUnifiedTopology: true
             },

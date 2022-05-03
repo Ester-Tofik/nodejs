@@ -142,3 +142,18 @@ error: 05-02-2022 15:41:50: checked!!
 error: 05-02-2022 17:12:51: checked!! 
 error: 05-03-2022 14:23:19: checked!! 
 error: 05-03-2022 14:24:23: checked!! 
+error: 05-03-2022 14:45:14: checked!! 
+error: 05-03-2022 14:48:27: checked!! 
+error: 05-03-2022 14:53:55: checked!! 
+error: 05-03-2022 14:57:08: checked!! 
+error: 05-03-2022 14:57:58: checked!! 
+error: 05-03-2022 14:59:55: checked!! 
+error: 05-03-2022 15:00:31: checked!! 
+error: 05-03-2022 15:09:39: checked!! 
+error: 05-03-2022 15:16:24: checked!! 
+error: 05-03-2022 17:56:18: checked!! 
+error: 05-03-2022 19:32:39: checked!! 
+error: 05-03-2022 19:45:54: checked!! 
+error: 05-03-2022 19:47:03: checked!! 
+error: 05-03-2022 19:47:25: checked!! 
+error: 05-03-2022 20:54:50: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
