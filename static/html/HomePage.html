@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>home page</title>
+    <script src="../js/func.js"></script>
+</head>
+<body  onload="user()">
+    <div>
+        <h1 id="HomePage"></h1>
+        <h1>Nice to meet you</h1>
+        <input type="button" onclick="edit()" value="to edit your details" />
+        <br /><br />
+        <div id="div_change_details" style="display:none">
+            <b>user email:</b>
+            <input type="email" id="change_user_name" />
+            <br /><br />
+            <b>password:</b>
+            <input type="password" id="change_user_password" />
+            <br /><br />
+            <b>first name:</b>
+            <input type="text" id="change_first_name" />
+            <br /><br />
+            <b>last name:</b>
+            <input type="text" id="change_last_name" />
+            <br /><br />
+            <button onclick="update()">update</button>
+        </div>
+        <button onclick="getallorders()">get your last orders</button>
+        <div id="orders"></div>
+        <br/>
+        <a href="../html/Products.html">go to shopping</a>
+    </div>
+</body>
+</html>
