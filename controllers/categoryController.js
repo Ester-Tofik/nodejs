@@ -2,6 +2,10 @@ const CategoryModel = require('../models/categoryModel.js');
 const { ObjectId } = require('mongodb');
 
 module.exports.list = async function (req, res, next) {
+
+
+
+    
     try {
         const categories = await CategoryModel.find();
         res.send(categories);
